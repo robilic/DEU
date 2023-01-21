@@ -1,0 +1,43 @@
+================================================================
+Title                   : TinyWad.WAD
+Author                  : Sven Neuhaus
+Email Address           : sven@fuzzy.ping.de
+Misc. Author Info       : Doom Addict
+
+Description             : Tiny level with a tough to find secret.
+                          Check out the map once you found it all.
+
+Additional Credits to   : -
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M1
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes ? (Gotta check, sorry)
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 2 hours
+Editor(s) used          : DEU (what else?)
+Known Bugs              : End of level switch not aligned
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+* Where to get this WAD *
+
+It's included with the DEU 5.1 distribution (and nowhere else!).
+
+

@@ -1,0 +1,513 @@
+[1]  THE STORY SO FAR...
+========================
+
+You sat in front of the computer for hours, trying once again to create a
+masterpiece of a level.  But nothing seems to go correctly.  First, the
+doors don't seem to work.  Then, the Hall of Mirrors appears throughout
+your level.  Stairs seem to be impassable.  Lifts don't work right.  Demons
+seem to fire through walls without trouble.
+
+Finally, you sigh in frustration, and quit the editor.  "I'll never make
+this work, I'll just let those other people try making levels...  they can
+do all the work."  You think sadly of all the masterpieces you had planned
+that will now never be completed, but resign yourself to your fate.
+
+*ZZZAP!*  There is a blinding flash of green light, and an Imp holding a
+disk appears next to you.  The Imp grins at you, well, impishly.  You stare,
+stunned.
+
+"So, you don't know how to make a level, eh?  I have right here some
+levels that you could look at, and learn from.  They're rather fun ones,
+too."  The Imp grins at you.  "Why don't you pop in this disk, and take a
+look?"
+
+You narrow your eyes suspiciously.  "What's the catch?"
+
+The Imp tries to look innocent.  "Nothing much really, just a
+trifle... only a small fraction of your soul... or we COULD make other
+arrangements if you really want to..."
+
+You turn away.  "I'm not THAT desperate to make a level..."  You hope the
+Imp will leave.  The Imp does not oblige you.  Instead, he grows angry.
+He looks like he's about to toss a fireball at you, and you feel like
+reaching for a shotgun.  Instead, the Imp halts.  "Nooo...  I have a better
+idea...  I will let you have these levels... on one condition.  YOU SURVIVE
+THEM FIRST!"
+
+You shrug.  "I'm a good DOOM player, and they can't be THAT hard."
+
+The Imp grins.  "As DOOM levels, no.  But if you TRULY experience them..."
+He breaks off and laughs evilly.
+
+As you wonder what he means, you find yourself enveloped in a green
+glow.  The last thing you hear is the Imp, still laughing.
+
+You come to, and find yourself wearing a DOOM-style Marine outfit.  "Oh,
+no, I'm in the game!" you think to yourself.  You realize that the only
+way out is to successfully complete all the levels.  The Imp's voice rings
+out mockingly.  "So, you want to play with editors, huh?  Well, now you're
+in for it!  You're KNEE-DEEP IN THE DEU!"
+
+[Pick up KNEE-DEEP IN THE DEU, the new episode by DEU 5.1 testers]
+
+
+[2] THE ARCHITECTS OF HELL
+==========================
+
+This episode is intended as a tutorial for DEU users, as well as a quick
+little piece of work to show off the DEU tester's level-making skills.
+
+The whole episode is fairly small, it's not intended to require much
+skill, just to be somewhat fun and give you ideas.  Besides, if it was
+that big, the ZIP file for DEU 5.1 would be huge!  So just sit back and
+enjoy the tour of DEU's capabilities in levelmaking.
+
+All these levels are suitable for single-player, cooperative or deathmatch
+play, at all difficulty settings.  They all have some secret places where
+you can find useful stuff.
+
+This intro text was written by Jeremy Blackman.  The demos were created
+by the DEU beta-testers (information for each level follows) and edited
+by Steve Bareman and Rapha‰l Quinet.
+
+
+================================================================
+MISSION 1:
+================================================================
+Title                   : FSW4.WAD
+Author                  : Cameron Newham
+Email Address           : cam@iinet.com.au
+Misc. Author Info       : From Perth, Western Australia
+
+Description             : FSW - Small Wad :)
+                          A little level with a lot of imps and some
+                          fancy stuff including a turret and moving
+                          floors.  Easy to moderate difficulty.
+
+Additional Credits to   : Raphael and Steve who wanted a demo
+                          WAD asap.
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M1
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes  (added SLB)
+Deathmatch 2-4 Player   : Yes  (added SLB)
+Difficulty Settings     : Yes  (made easier SLB)
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 5.5 hours
+Editor(s) used          : DEU
+Known Bugs              : None
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+
+* Where to get this WAD *
+
+It's included with the DEU 5.1 distribution.
+
+
+================================================================
+MISSION 2:
+================================================================
+Title                   : STUPIDDT.WAD   (Stupid DOOM Tricks #1)
+Author                  : Steven L. Bareman
+Email Address           : bareman@hope.cit.hope.edu
+Misc. Author Info       : 
+
+Description             : This level is a perfect example of a
+                          having too much DOOM on the mind.
+
+Additional Credits to   : My wife who has tolerated (barely ;-)
+                          countless hours of DOOM and DEU.
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M2
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 4.5 hours (Ok I admit it!  I'm slow.)
+Editor(s) used          : DEU5.1 beta (BSP10 to rebuild nodes)
+Known Bugs              : Lost souls.  Do they bother you too?
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+
+* Where to get this WAD *
+
+Only in the DEU 5.1 sample episode.
+
+
+================================================================
+MISSION 3:
+================================================================
+Title                   : BOOM.WAD   
+Author                  : Billy Chow
+Email Address           : billy.chow@eng.ox.ac.uk
+Misc. Author Info       : 
+
+Description             : Shotguns boom in DOOM.
+
+Additional Credits to   : DEU and BSP.
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M3
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 10 hours approx. (Ok, I'm terribly slow.) 
+Editor(s) used          : DEU (nodes and blockmap built by BSP 1.0)
+Known Bugs              : Nil.
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+
+* Where to get this WAD *
+
+It's included with the DEU 5.1 distribution.
+
+
+================================================================
+MISSION 4:
+================================================================
+Title                   : Michael.wad
+Author                  : Michael Stiller
+Email Address           : sn@g386bsd.first.gmd.de (mention MICHAEL.WAD 
+                                in subject)
+Misc. Author Info       : 386 hacker.
+
+Description             : First try, nice traps.
+
+Additional Credits to   : -
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M4
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : endless hours of testing
+Editor(s) used          : DEU + BSP10
+Known Bugs              : bugs? you crazy?
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+
+* Where to get this WAD *
+
+It's included with the DEU 5.1 distribution.
+
+
+================================================================
+MISSION 5:
+================================================================
+Title                   : SHOOTEM3.WAD (Shoot 'Em, rev. 3)
+Author                  : Michael Kelsey
+Email Address           : 
+Misc. Author Info       : 
+
+Description             : 
+
+Additional Credits to   : 
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M5
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 8hrs+
+Editor(s) used          : DEU 5.0 BETA 4, DEU 5.0 HACKED, DEU 5.1 BETA 2
+Known Bugs              : 
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+
+* Where to get this WAD *
+
+It's included with the DEU 5.1 distribution.
+
+
+================================================================
+MISSION 6:
+================================================================
+Title                   : HELIPAD.WAD
+Author                  : Sean R. Malloy
+Email Address           : malloy@crash.cts.com
+Misc. Author Info       : 
+
+Description             : A puzzle -- get to the soul sphere; there are
+			  triggers around the level that remove the
+			  obstacles that are in your way. Use them right,
+			  and you can reach it.
+
+Additional Credits to   :
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M6
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 28 hours.
+Editor(s) used          : DEU 5.0, BSP 1.0
+Known Bugs              : 
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+
+* Where to get this WAD *
+
+It's included with the DEU 5.1 distribution.
+
+
+================================================================
+MISSION 7:
+================================================================
+Title                   : DETHWHEL.WAD
+Author                  : Trevor Phillips
+Email Address           : phillips@macros.cage.curtin.edu.au
+
+Description             : A simple level, layout-wise,
+  originally designed exclusively for Deathmatch, but adapted
+  for one player games as well. Features :
+     - Exiting on Deathmatch is difficult unless you co-operate
+     - Several "stages" based in the same area. Just when you
+       think you've finished ...
+     - Last "stage" is the hardest, but you can exit without
+       completing it.
+  This level is mainly a shoot-the-bad-guy level; Completion is
+  easy with a minimum of kills, but the aim is to get 100% kills.
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M7
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : Hard to say. On & off for days.
+Editor(s) used          : DEU
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+
+* Where to get this WAD *
+
+It's included with the DEU 5.1 distribution.
+
+
+================================================================
+MISSION 8:
+================================================================
+Title                   : PRISON.WAD
+Author                  : Dietrich Hempelmann
+Email Address           : avatar@uni-paderborn.de
+Misc. Author Info       : _O_          dimitri@PaderMud            _O_     
+			   |   Try PaderMud at 131.234.12.13 3000   |                
+
+Description             : This is part of a level I created during the last
+			  weeks (didn't have THAT much time ;-)
+			  It's a prison with nice Imps, Troopers, Seargants
+			  and even Daemons and Cacodaemons (UV only).
+			  You'll find the PlasmaGun and shotguns (from 
+			  the Seargants)
+
+Additional Credits to   : Raphael and Steve and all who are working on 
+			  DEU, the best Editor there will ever be.
+		     
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M8
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes (at least they have a starting point)
+Deathmatch 2-4 Player   : Yes 
+Difficulty Settings     : Yes (3 different)
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch 
+Build Time              : ?? hours (cutting it of from my BIG wad only took
+				    about 30 minutes)
+Editor(s) used          : DEU (various betas)
+Known Bugs              : None (mail me if you find some)
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+
+* Where to get this WAD *
+
+It's included with the DEU 5.1 distribution.
+
+
+================================================================
+MISSION 9:
+================================================================
+Title                   : SEWER.WAD
+Author                  : Robert M. Harvey
+Email Address           : c/o justin.vanabrahams@infinity.wmeonlin.sacbbx.com
+Misc. Author Info       : The twisted author likes minotaurs
+
+Description             : Trenches, muck, dungeons, but generally a
+sewer.  Vering objects per difficulty setting makes for more intense
+suprises.  Note that small size was choosen along with map layout to
+enhance multiplayer/deathmatch play, without corrupting single player
+usage.  One more major bonus to this level is, OH YES, THEME!! No more helter
+skelter texters.  Highly recomended!  Enjoy!
+
+
+Additional Credits to	: 
+================================================================
+
+* Play Information *
+
+Episode and Level #     : E1M2
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes  (Multiplayer recommended)
+Difficulty Settings     : Most Definitely!
+New Sounds              : No
+New Graphics            : No
+
+
+* Construction *
+
+Base                    : New level from scratch
+Build Time              : 50 Hours
+Editor(s) used          : DEU 5.0
+Known Bugs              : None
+
+
+* Copyright / Permissions *
+
+You MAY use this level as a base to build additional levels.
+But do not claim you created this level.  If you create a new
+level based on this one, please credit the original author.
+You may do whatever you want with this file.  The author
+will not accept any responsibility for problems caused with it.
+
+================================================================
+

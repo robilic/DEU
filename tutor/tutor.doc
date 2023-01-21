@@ -1,0 +1,443 @@
+  DEU TUTORIAL v1.5
+
+  Making your first original level.
+
+  This document and the accompanying .wad files should help
+  you to see what you need to do to build a level.  It's a
+  sort of touch-and-see how it works thing.  (sounds like
+  fun!)
+
+  This tutorial works best it you print out the TUTOR.DOC
+  and then follow along with DEU on the computer.
+
+  Items appearing in braces {} indicate that there is a file
+  that you can load to follow along and see how to do things.
+  load the file by typing  "R wadfilename.WAD" at the DEU Main Menu.
+  After the file is loaded type "E 2 1" to go into the editor.
+  then select the editing mode(s) indicated in the braces
+  and move the pointer around to touch things and look at how
+  they are structured.
+
+
+  Now we begin our journey...
+
+   1. First create the new map with the Create command from the 
+      main menu (C 2 1).  Go into vertices mode (hit tab) and 
+      create some vertices by positioning the cursor where you
+      want the vertex and then press "Ins" to place a vertex 
+      there.  Using the Grid mode (press G) is helpful if you
+      want to line up the vertices.  You will need a minimum of 
+      three to create an enclosed polygon.  (Don't be afraid 
+      of running out until you're really good at this,
+      many doom maps contain well over 800 vertices.)
+
+   2. Group the vertices by marking them (highlight them and left click the 
+      mouse or press "M") and add linedefs by pressing insert.  It is best
+      to mark them in CLOCKWISE order.
+
+   3. Mark all of the lines for the sector (you will want to mark the ones
+      that aren't already marked) and press "Ins" to add a sector.
+
+   4. Repeat steps 1 - 3.  
+      (You'll want more than 1 sector, unless you are very dull).
+      {S1.WAD - vertices, linedefs}
+      Load up this wad and see a very basic 2 sector map.
+
+   5. (This step is made mostly obsolete by DEU5.0 and above since
+      it now does these things automatically, but you can verify it
+      anyway.)
+
+      If you have any lines that are shared by 2 sectors and are meant 
+      to be the place where you cross from room to room set the Flags 
+      to 2S (two-sided and shoot thru) and turn off the Impassable Flag.  
+      You will probably want to get rid of any of the Normal/Upper/Lower 
+      Textures that are on lines that you walk across (usually, unless 
+      you want to create the illusion of walking through a wall.).
+      
+      {S2.WAD - Linedef} Check out Linedef # 1.
+
+
+   6. To change the way the walls look, select a line or a group of lines 
+      and change the Normal texture on some of the Sidedefs. (To go to
+      line editing mode, press L).
+      
+      {S3.WAD - Linedef} Take a look at Linedefs #0,2, and 3.
+
+
+   7. Change the Floor and Ceiling Textures in a sector. (To go to sector
+      editing mode press S).
+      
+      {s4.wad -Sector}  Look at Sector #1, compare to the default in
+      sector 0.
+
+
+   8. Add a Player1 Start thing. If you want to play cooperatively you
+      will also want to add a Player2, Player3 and Player4 start thing
+      and if you want to play in deathmatch mode you must have a MINIMUM
+      of 4 deathmatch start things)
+      
+      {s5.wad -Things}  That's were you start and the direction you're
+      facing.
+
+   9. Change the type of one of the lines to 
+         "Special - Ends level goes to next level."
+      If you want to be able to leave the level you will need an exit.
+      (Even if just to see the deathmatch frag counts!).
+      
+      {S6.WAD - Linedefs} Check out Line 5.  Oh yeah, the texture was
+      changed to one of the SW1xxxx textures so that it looks like a
+      switch too.  Nice touch eh?
+
+
+  10. Use Q to quit and save your changes.  Answer Y to the question
+      about building the nodes, etc. (unless you use expert mode, 
+      in which case... Why are you reading the tutorial?? ;-)
+
+  11. Use Q to quit DEU.
+
+  12. Fire up doom and try it out!
+
+   DOOM -FILE yourfile.WAD
+
+        If you are working on a level higher than E1L1 you can
+        go straight there by using IDCLEVxy  where x is the episode
+        and y is the mission #.
+
+  13. To record a demo of your level (a .LMP file) type this:
+
+   DOOM -DEVPARM -WARP e m -SKILL s -RECORD demofile -FILE yourfile.WAD
+
+        You must NOT type the .LMP extention and you MUST type the .WAD
+        extension. 'e' is for Episode (1, 2 or 3), 'm' is for mission
+        (1 to 9) and 's' is for skill level (1 to 5). If you die before
+        the end, press SPACE to end the recording and go back to DOS.
+
+  14. To play back your demo, type this:
+
+   DOOM -PLAYDEMO demofile -FILE yourfile.WAD
+
+
+
+
+  CHAPTER 2:  The Adventure Continues...
+
+
+
+  Now that we have a level, let's put some cool stuff in it.  What
+  we will do here is to show ONE possible way to construct some 
+  special sectors like doors, stairs and lifts.  Please note that
+  there ARE other ways to do them because there are many different
+  types of doors & lifts, etc.  Also, you're a little more experienced
+  at making vertices, lines and sectors already so we are not going 
+  to have as many WAD files to demonstrate the structures, just one
+  or two to show each structure.
+
+
+
+
+  Adding a *DOOR*.  We'll open it for you...
+
+  1. The split linedef feature can be used to add a vertex which 
+     can then be dragged to where you want the edge of the door 
+     to be.  This is helpful if you decide after you build the 
+     sector that you want to have a door.  If you planned ahead
+     you won't need this.
+
+     Add some vertices & lines to build a new sector which will 
+     later become the door.
+
+     You may want to add some more vertices and lines to build a sector
+     on the other side of the door so you've got somewhere to go once
+     the door is open.
+  
+  {s7.wad - linedefs and sectors}
+
+     There's no door here yet, but it'll be coming soon.
+     Split line 0 into lines 0 & 8.
+     Added lines 9,10,11.  Used lines 0,9,10,& 11 to add sector 2
+     (Sector 2 will become the door in the next file.)
+     Added lines 12,13,14.  Added sector 3 on lines 10,12,13,& 14.
+     Sector 3 is the room on the other side.     
+
+  2. The "Normal" vector of the lines (The side of the arrow with the
+     line sticking out of it) must be on the 'outside' of the door.
+     
+     Change the type of the linedefs on the front and back of the door
+     to a DOOR type.  1 DR Open door - closes after 5 seconds is the
+     best one for beginners, you'll figure out other types of doors later.
+
+     Change the first sidedef of the front & back of the door to have
+     an Upper Texture only (NO Normal or Lower Texture).  If you want it
+     to be obvious, make it a texture that looks like a door.
+
+     Change the ceiling height of the door sector to the same level 
+     as it's floor.  It will rise until it's just below the height 
+     of the lowest adjacent ceiling.
+
+     Change the ceiling texture of the door sector to something that looks
+     like the bottom of the door.
+
+     On the linedefs on the sides of the door that are the door frame,
+     set the flags to Lo (lower texture unpegged.) This will keep them
+     from moving when the door goes up.  Also, you should set the 
+     Normal texture to something that looks like a door frame.
+
+     {s8.wad - linedefs and sectors}
+
+     Linedefs 0 & 10, changed type to Door - DR open door
+     Changed first sidedefs upper texture (BIGDOOR2).
+     Set sector #2 Ceiling height to the same as its' floor.
+     Changed ceiling texture (FLAT20).
+     Changed lines 9 & 11 texture (DOORTRAK).
+     Set 9 & 11 to type Lower Unpegged.
+     Tada!  A working door!
+
+
+  Perhaps you can buy a Stairway to Heaven, but you'll have to
+  build the *STAIRWAY* to Hell!
+
+
+  1. Add the linedefs and sectors that will become the stairs.
+  
+  2. Individually change the floor heights of each stair sector.
+     Change them in units of 8 or 16 for best results (24 is the
+     maximum for a stair you can climb, but it looks pretty tall).
+     Increment for stairs going up, decrement for stairs going
+     down. (obviously)
+
+  3. For sidedefs facing a sector that has a floor height lower
+     than its floor, set the lower texture to something that looks
+     like a stair.
+
+  4. If the ceiling height is changed set the upper texture of sidedefs
+     facing sectors with higher cielings.
+
+  {s9.wad - linedefs, sectors}
+
+     Set individual floor heights on sectors 4,5,6,7,8
+     Set ceiling height on sectors 4,5,6,7,8,9
+     Set first sidedef lower texture on lines 13,16,19, & 22.
+     Set seconds sidedef upper texture on line 13.
+
+     Also, for demonstration set the floor height on sector 9
+     lower so that you could 'fall' down into it and not be able
+     to get out because 64 units is too tall to climb.
+     Because sector 9 is lower, set a lower texture on the second
+     sidedef of line 28.
+
+
+
+     
+  Hey buddy!  Need a *LIFT*?
+
+
+  1.  It's best to make the linedefs on the sides of the lift that 
+      you can walk across have their "Normal" sides (the one with the
+      little line sticking out) on the outside of the lift.
+
+  2.  Change the TYPE of the linedef facing the sector with the lower
+      floor height to "Raise lift & switch to lower...".
+
+  3.  Set the TYPE of the linedef facing the sector with the same floor
+      height to "WR - lower lift...".
+
+  4.  Verify or set the floor height of the lift sector to its maximum
+      height.
+
+  5.  Set the FLAGS for linedefs on the side (that you don't cross) to 
+      Upper texture unpegged.
+
+  6.  Set a lower texture on the sidedef of the linedef which will be
+      higher than the lift when it is down.
+
+  7.  Set a floor texture on the lift sector to something that looks
+      like a lift floor. (optional, but it looks good).
+
+  8.  Assign the lift sector a linedef TAG number.  Use the lowest
+      available tag number.
+
+  9.  Assign the linedefs with the Lift TYPES the sector TAG number 
+      that you assigned to the lift sector.
+
+  {s10.wad - linedefs, sectors)
+
+     Flipped linedef 28.
+     Set linedef 28 type to Raise lift...
+     Set linedef 25 type to Lower lift...
+     Set linedefs 26 & 27 flags to upper texture unpegged.
+     Set floor height of sector 9 to it's up position.
+     Set floor texture of sector 9 to STEP2.
+     Set lower texture of linedef 25 second sidedef.
+     Assigned TAG #1 to sector 9.
+     Assigned TAG #1 to linedefs 25 & 28.
+     
+
+
+  * TRANSPORTER pad, 1 to beam up! *
+
+
+  {for the next few examples you will want to also try out the WADs to
+   see how they look in DOOM}
+
+  1. First create two sectors. One has to be a multiple of 64x64 units.
+     It will be the 'pad' and has to be aligned on a vertex with a 
+     multiple of 64 (use G for grid to align the vertex points) or else
+     the texture for the pad will be offset and will look bad. {T1.WAD}
+
+  2. Make sure the lines on the side of the pad are the right way, the
+     player will transport when he travels from side 1 to side 2 of the
+     line. 
+
+  3. Edit the line type and change it to 97 WR Transport to other sector 
+     (Go to line type, then special) or 91 W1 if you want it to work
+     only once.
+
+  4. Set the Sector tag number of the lines to an unused number.
+     
+  5. Next, you'll need to decide where you want to transport. Select a
+     sector and set the linedef tag to the same as above.
+
+  6. Lastly, add a transporter exit thing somewhere in the destination
+     sector.
+
+
+
+  Ok, now we're cooking!  Let's make everything look good!
+
+
+  1. {T2.WAD} is the same as above, but with textures aligned. Now
+     you know why I took that weird texture!
+
+  2. Look at Sidedef #2 & #5 (first sidedefs of lindedefs #2 & #5).
+     You'll see that they have a texture X alignment. 
+
+  3. Here's how to figure it out: go to maximum zoom (press = a few
+     times), then display the smallest grid (press SHIFT-G once). Each
+     square of the grid is 8 alignment points. To move a texture to
+     the left, X needs to be positive and to move it to the right,
+     X has to be negative. The way you have to look at it is taking
+     the wall itself and moving it over (or behind) the other one
+     as to blend the two together.
+
+  4. So, if you look at sidedefs #2 and #5, you'll see that #2 has an
+     X offset of -64 and #5 of +64.
+
+
+
+  Line up!  (Texture Alignment) 
+
+  Now, we do some heavy math stuff! Aligning vertically for stairs and
+  more complex horizontal alignments.
+
+
+  1. {A1.WAD} is a test WAD with two stairs in it. One has varying 
+     ceiling heights and the other has the same ceiling. This one
+     needs a LOT of work!
+
+  2. {A2.WAD} is the aligned one. Looks a lot better hey! Here's how
+     it's done. NOTE that this is only for NORMAL textures, not 
+     UPPER or LOWER textures, they are aligned in a different way.
+
+  3. For starters, go back to A1, you'll notice that when the ceiling
+     is the same height, the textures align (vertically that is!) and
+     that's because DOOM displays a texture starting from the top left
+     of the panel. So, to align a texture vertically all you need to
+     know is the difference in ceiling height. {In A2.WAD look at the
+     Y offset of linedefs #5, #13, #12 and #3}.
+
+  4. There's a problem with aligning all these linedefs because you'd
+     need to be able to align beyond the -100 to 100 limit. The trick
+     is to do a little math (I know, yuck!). If you need to align a
+     texture by 128 points, then you'll need to move one 100 points 
+     one way and the other -28 the other. {In A2.WAD look at the X
+     offsets of linedefs #14 and #0}.
+
+  5. Another problem is when the linedef is longer than the size of
+     a given wall. In the case of SKY2, it's 256 points wide and the
+     length of the wall composed of linedefs #2, #4, #11 and #10 is a
+     total of 464 points, so SKY1 fits almost twice. If you look at
+     the X offsets for the above lines, you'll probably say: "How the
+     heck did he get those!?!?" It's really elementary math skills!
+
+  6. Here's how it's done; first, lines #2, #4 and #11 together are
+     256 points long, so lines #2 and # 10 will have the exact same
+     offset. Next, if you left line #2 with an offset of 0, you would
+     need to move line #4 by 128 (or -128 which is the same because
+     the texture is 256) and line #4 by 128+64=192 (or -64 which is
+     192-256). You can't do that! Remember, you have a limit of -100
+     to 100, so 128 (or -128) will not do, so we need to use two
+     lines to do it. If you move line #2 by -100, then you only need
+     to move line #4 by 28 (-100 - 28 = -128) and line #11 by 92 (28
+     + 64 = 92). Then all you do is set line #10 the same as line
+     #2 which is -100.
+
+  7. I know it looks really complicated, but it really is simple once
+     you know how to do it (I know, I sound like your fifth grade math
+     teacher!). Anyways, DEU may eventually have an align texture
+     feature, so you can wait until then, but if you want to be in the 
+     hall of fame of WADs, you'll need to align those textures NOW!
+
+
+
+  Wow! I want more! OK, here's the best you can do to align the
+  textures for windows and secret doors...
+
+  1. Look at W1.WAD (run DOOM with it, type 'doom -file w1.wad', and
+     start a new Episode 2 game). Go to each side of the window one
+     side is aligned and the other is not. Now look at each of the
+     secret doors, one is aligned vertically and the other is not. Can
+     you figure out how to align UPPER textures? OK, I'll tell you,
+     but I won't explain the X offset alignement, I just did in the
+     last few paragraphs!
+
+     {Check the MAP (press TAB) when running DOOM with W1.WAD, you
+     can only see a door (yellow line) on the WEST side. The Secret
+     bit is set for that Linedef, also the Sector behind the EAST
+     door is also of type "secret".}
+
+  2. First, for windows, you'll just need to set the flag "Upper
+     Texture is Unpegged" because normally an UPPER texture is drawn
+     from the bottom left corner up (remember a NORMAL texture is
+     drawn from the TOP left corner down) and changing this flag will
+     make it drawn just like a NORMAL texture. This will align the
+     texture vertically (assuming the ceiling height is the same as
+     the adjoining walls).
+
+  3. Second, for doors, you don't want to set the "unpegged" flag
+     because the door would not look right when oppening, so you want
+     to adjust the texture with an offset. In W1, the ceiling is 100
+     high and STARTAN3 is 128 high, so you want the Y offset to be
+     -28 (128 - 100 = -28).
+
+  4. Third, you'll want to know how to align the bottom part of a
+     window. Well, unless somebody proves otherwise, it can't be
+     done. Sure, you can use textures that LOOK aligned (because
+     of the Window height and texture type) but you can't REALLY
+     do it. Here's why: LOWER textures are drawn the exact same way
+     as NORMAL textures (from TOP left corner down) unless you set
+     the "Lower texture is unpegged" flag in which case it starts
+     from wherever the upper texture ended. Look at the WEST side
+     of the window in W1.WAD (the side that isn't aligned). I set
+     the upper and lower textures to unpegged. See the difference?
+     The LOWER texture of the "aligned" side is the same as the
+     UPPER texture there, but on the "un-aligned" side, it is the
+     continuty of the UPPER texture.
+
+
+
+  Well that's all for now...
+
+  The rest you can probably figure out from looking at the original 
+  levels from id software.  (Really, we figured it out and we're 
+  stupid. You should have much less trouble.)
+  
+  If you're not registered yet, call 1-800-IDGAMES and register now.
+
+  And don't forget, DOOM: Hell on Earth, coming soon! (September 1994)
+  [Possessed humans with chain-guns, new bad-ass bosses, more
+  wicked enemies, more grim-n-gory death sequences.]
+  
+  
+  The DEUTUTOR was compiled by Steve Bareman and Jean-Serge Gagnon
+  with guidance from Raphael Quinet and numerous helpful suggestions
+  from DEU users and alt.games.doom.
